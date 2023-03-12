@@ -1,0 +1,63 @@
+body {
+    background: #5bffad;
+    overflow: hidden;
+}
+.grid {
+    height: 1vh;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    grid-template-rows: repeat(9, 123px);
+    grid-gap: 10px;
+}
+.item {
+    padding-top: 50px;
+    background-color: #00994c    ;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+.game {
+    padding-top: 800px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    padding: 35px 10px;
+    background: #00994c;
+    cursor: pointer;
+}
+.input {
+    padding-top: 30px;
+    font-weight: bold;
+    background-color: #00994c;
+}
+.here {
+    background-color: #006935;
+}
+
+@media screen and (max-width: 540px){
+    .item {
+        padding-top: 55px;
+        font-size: 1.75rem;
+    }
+    .grid {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        grid-template-rows: repeat(9, 123px);
+    }
+}
+@media screen and (max-width: 470px){
+    button {
+        padding: 20px 10px;
+    }
+    .input {
+        padding-top: 15px;
+    }
+    .item {
+        padding-top: 35px;
+        font-size: 1.5rem;
+    }
+    .grid {
+        grid-template-columns: repeat(3, minmax(88px, 1fr));
+        grid-template-rows: repeat(9, 90px);
+    }
+}
